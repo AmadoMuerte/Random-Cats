@@ -6,11 +6,6 @@ function sendRequest(method, url, body = null) {
     })
 }
 
-
-
-
-// .catch(err => console.log(err));
-
 document.querySelector('.btn').addEventListener('click', () => {
     sendRequest('GET', url)
     .then(data => {
